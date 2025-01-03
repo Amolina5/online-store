@@ -1,0 +1,10 @@
+arcade-container {
+    width: 250px;
+    height: 450px;
+    background-color: #222;
+    border: 5px solid #FF0000;
+    border-radius: 10px;
+    position: relative;
+    padding: 2px;
+}
+  
