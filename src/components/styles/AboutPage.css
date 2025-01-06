@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.about {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Press Start 2P', cursive;
+  padding: 20px;
+  text-align: center;
+}
+
+.about-header {
+  background-color: #ff0066;
+  padding: 20px;
+  border-bottom: 4px solid #ffcc00;
+  animation: neon-glow 1.5s infinite alternate;
+}
+
+.about-header h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.about-content {
+  padding: 20px;
+}
+
+.about-content section {
+  margin: 20px 0;
+}
+
+.about-content h2 {
+  font-size: 2em;
+  color: #ffcc00;
+  text-shadow: 2px 2px #ff0066;
+}
+
+.about-content p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.about-content a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+.about-footer {
+  background-color: #ff0066;
+  padding: 10px;
+  border-top: 4px solid #ffcc00;
+}
+
+.about-footer p {
+  margin: 0;
+  font-size: 1em;
+}
+
+@keyframes neon-glow {
+  from {
+    text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 30px #ffcc00, 0 0 40px #ffcc00, 0 0 50px #ffcc00, 0 0 60px #ffcc00, 0 0 70px #ffcc00;
+  }
+  to {
+    text-shadow: 0 0 20px #ff0066, 0 0 30px #ff0066, 0 0 40px #ff0066, 0 0 50px #ff0066, 0 0 60px #ff0066, 0 0 70px #ff0066, 0 0 80px #ff0066;
+  }
+}

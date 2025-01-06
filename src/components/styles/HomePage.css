@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Press Start 2P', cursive;
+  margin: 0;
+  padding: 0;
+}
+
+.home {
+  text-align: center;
+  padding: 20px;
+}
+
+.header {
+  background-color: #ff0066;
+  padding: 20px;
+  border-bottom: 4px solid #ffcc00;
+  animation: neon-glow 1.5s infinite alternate;
+}
+
+.header h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.header p {
+  font-size: 1.2em;
+  margin: 10px 0 0;
+}
+
+.content {
+  padding: 20px;
+}
+
+.games-section, .about-section {
+  margin: 20px 0;
+}
+
+.games-section h2, .about-section h2 {
+  font-size: 2em;
+  color: #ffcc00;
+  text-shadow: 2px 2px #ff0066;
+}
+
+.games-list {
+  list-style: none;
+  padding: 0;
+}
+
+.games-list li {
+  font-size: 1.5em;
+  margin: 10px 0;
+  animation: fade-in 1s ease-in-out;
+}
+
+.footer {
+  background-color: #ff0066;
+  padding: 10px;
+  border-top: 4px solid #ffcc00;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 1em;
+}
+
+@keyframes neon-glow {
+  from {
+    text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 30px #ffcc00, 0 0 40px #ffcc00, 0 0 50px #ffcc00, 0 0 60px #ffcc00, 0 0 70px #ffcc00;
+  }
+  to {
+    text-shadow: 0 0 20px #ff0066, 0 0 30px #ff0066, 0 0 40px #ff0066, 0 0 50px #ff0066, 0 0 60px #ff0066, 0 0 70px #ff0066, 0 0 80px #ff0066;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

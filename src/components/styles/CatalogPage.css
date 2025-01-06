@@ -16,7 +16,8 @@
 }
 
 .machine-card {
-    border: 1px solid #ccc;
+    background-color: #fdfdfd;
+    border: 1px solid #070707;
     border-radius: 8px;
     padding: 1rem;
     margin: 1rem;
@@ -30,7 +31,7 @@
     border-radius: 4px;
 }
 
-.machine-card h2 {
+.machine-card h2 {  
     font-size: 1.5rem;
     margin: 1rem 0;
 }
@@ -41,13 +42,37 @@
 
 .price {
     font-weight: bold;
-    color: #d9534f;
+    color: #f50e06;
     font-size: 1.25rem;
 }
 
 .buy-button {
-    background-color: #28a745;
-    color: white;
+    background-color: #04f83d;
+    color: blueviolet;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.buy-button:hover {
+    background-color: #00ff37;
+}
+
+.machine-card:hover {
+    transform: scale(1.05);
+}
+
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.quantity-selector button {
+    background-color: #04f83d;
+    color: blueviolet;
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 4px;
@@ -55,10 +80,13 @@
     transition: background-color 0.2s;
 }
 
-.buy-button:hover {
-    background-color: #218838;
+.quantity-selector button:hover {
+    background-color: #00ff37;
 }
 
-.machine-card:hover {
-    transform: scale(1.05);
+.quantity-selector span {
+    margin: 0 1rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #000; 
 }
