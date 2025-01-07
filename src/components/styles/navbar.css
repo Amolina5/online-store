@@ -1,20 +1,4 @@
-.navbar-menu{
-    padding: 5px;
-    display: flex;
-    justify-content: space-around;
-    height: 60px;
-    align-items: center;
-}
 
-a{
-    text-transform: uppercase;
-    font-size: 18px;
-    color: rgb(red, green, blue);
-    letter-spacing: 1px;
-    font-weight: bolder;
-    text-decoration: none;
-}
-
-a:hover{
-    color: red;
+.navbar {
+background-color: rgb(187, 0, 187);
 }

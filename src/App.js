@@ -8,7 +8,7 @@ import AboutPage from './components/AboutPage';
 
 import {BrowserRouter, Routes, Route } from 'react-router-dom';
 
-//import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 //import "bootstrap/dist/js/bootstrap.js";
 //import ArcadeMachine from './components/ArcadeMachine';
 
