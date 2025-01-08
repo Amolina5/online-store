@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 .catalog {
     font-family: Arial, sans-serif;
-    color: #000;
+    color: #fcf7f7;
     margin: 0 auto;
     padding: 2rem;
     text-align: center;
 }
 
 .catalog h1 {
-    margin-bottom: 2rem;
+    color: rgb(8, 8, 8);
+    margin-bottom: 32px;
 }
 
 .machine-list {
@@ -16,66 +18,19 @@
     justify-content: space-around;
 }
 
-.machine-card {
-    background-color: #fdfdfd;
-    border: 1px solid #070707;
-    border-radius: 8px;
-    padding: 1rem;
-    margin: 1rem;
-    width: 300px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
-}
-
-.machine-card img {
-    max-width: 100%;
-    border-radius: 4px;
-}
-
-.machine-card h2 {  
-    font-size: 1.5rem;
-    margin: 1rem 0;
-}
-
-.machine-card p {
-    margin: 0.5rem 0;
-}
-
-.price {
-    font-weight: bold;
-    color: #f50e06;
-    font-size: 1.25rem;
-}
-
-.buy-button {
-    background-color: #04f83d;
-    color: blueviolet;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.buy-button:hover {
-    background-color: #00ff37;
-}
-
-.machine-card:hover {
-    transform: scale(1.05);
-}
 
 .quantity-selector {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 1rem 0;
+    margin: 16px 0;
 }
 
 .quantity-selector button {
     background-color: #04f83d;
     color: blueviolet;
     border: none;
-    padding: 0.5rem 1rem;
+    padding: 8px 16px;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.2s;
@@ -86,8 +41,17 @@
 }
 
 .quantity-selector span {
-    margin: 0 1rem;
-    font-size: 1.25rem;
+    margin: 16px;
+    font-size: 20px;
     font-weight: bold;
     color: #000; 
+}
+
+.catalog-filter {
+    color: #0d24a7;
+    margin-bottom: 12px;
+}
+
+.catalog .catalog-filter button{
+    margin-right: 5px;
 }

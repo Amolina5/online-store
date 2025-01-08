@@ -1,4 +1,17 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 .navbar {
-background-color: rgb(187, 0, 187);
+    background-color: rgb(187, 0, 187);
 }
+
+.navbar-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.search-bar {
+    display: inline;
+}
+

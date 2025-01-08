@@ -63,7 +63,7 @@ body {
 
 .footer p {
   margin: 0;
-  font-size: 1em;
+  font-size: 16px;
 }
 
 @keyframes neon-glow {
