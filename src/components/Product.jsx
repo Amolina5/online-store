@@ -26,9 +26,9 @@ function Product(props) {
             return 'snow';
         } else if(cardEffect === 'lights') {
             return 'lights';
-        } else if(cardEffect === 'fire') {
-            return 'fire';
-        } else {
+        } else if(cardEffect === 'pacman') {
+            return 'pacman';
+        } else if(cardEffect === 'rainbow') {
             return '';
         }
     }

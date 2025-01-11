@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 .navbar {
-    background-color: rgb(187, 0, 187);
+    background-color: #FFAD00;
 }
 
 .navbar-nav{
@@ -8,6 +8,7 @@
     justify-content: space-between;
     align-items: center;
     width: 800px;
+    height: 80px;
     margin: 0 auto;
 }
 
