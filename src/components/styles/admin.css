@@ -28,6 +28,12 @@ h3 {
     margin-bottom: 15px;         /* Space between heading and form elements */
 }
 
+.error {
+    color: red;
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+
 /* Add responsive styles */
 @media (max-width: 768px) {
     .parent {
