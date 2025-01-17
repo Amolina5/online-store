@@ -1,32 +1,96 @@
-/* Footer.css */
 footer {
-    background-color: #282c34;
-    color: white;
-    padding: 20px;
-    text-align: center;
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive; /* Retro pixelated font */
+  border-top: 4px solid #ffcc00;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.footer-content {
+  position: relative;
+  z-index: 1;
+}
+
+footer p {
+  margin: 0;
+  color: #ffcc00;
+  text-shadow: 2px 2px #000;
+  animation: blink 1s infinite;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer ul li {
+  display: inline;
+}
+
+footer ul li a {
+  color: #ffcc00;
+  text-decoration: none;
+  text-shadow: 2px 2px #000;
+  animation: blink 1s infinite;
+}
+
+footer ul li a:hover {
+  color: #fff;
+}
+
+.pacman {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background: yellow;
+  border-radius: 50%;
+  clip-path: polygon(100% 50%, 0% 0%, 0% 100%);
+  animation: movePacman 5s linear infinite, pacmanMouth 0.5s steps(1) infinite;
+}
+
+.dots {
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  display: flex;
+  gap: 10px;
+  z-index: 0;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+}
+
+@keyframes movePacman {
+  0% { left: 0; }
+  100% { left: 100%; }
+}
+
+@keyframes pacmanMouth {
+  0%, 100% { clip-path: polygon(100% 50%, 0% 0%, 0% 100%); }
+  50% { clip-path: polygon(100% 50%, 25% 25%, 25% 75%); }
+}
+
+/* Blinking text effect */
+@keyframes blink {
+  0%, 50% {
+      opacity: 1;
   }
-  
-  .footer-content {
-    max-width: 800px;
-    margin: 0 auto;
+  50% {
+      opacity: 0.5;
   }
-  
-  .footer-links {
-    list-style-type: none;
-    padding: 0;
-    margin: 10px 0 0 0;
-  }
-  
-  .footer-links li {
-    display: inline;   
-    margin: 0 10px;
-  }
-  
-  .footer-links a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .footer-links a:hover {
-    text-decoration: underline;
-  }
+}

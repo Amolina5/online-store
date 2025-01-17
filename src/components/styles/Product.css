@@ -84,11 +84,11 @@
   }
 
 
-  /* dance revolution css classes*/
+  
   .lights {
     border: 10px solid pink;
-    animation: raveLights 1.5s infinite alternate; /* Change in colors and glow */
-    box-shadow: 0 0 10px pink, 0 0 20px pink, 0 0 30px pink; /* Initial glow */
+    animation: raveLights 1.5s infinite alternate; 
+    box-shadow: 0 0 10px pink, 0 0 20px pink, 0 0 30px pink; 
 }
 
 @keyframes raveLights {

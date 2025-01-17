@@ -2,7 +2,7 @@
     padding: 20px;
     background-color: #090808;
     min-height: 100vh;
-    color: white; /* Ensure text is visible */
+    color: white; 
 }
 
 .contact-header, .contact-footer {

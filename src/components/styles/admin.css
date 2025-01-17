@@ -5,27 +5,27 @@
 }
 
 .parent {
-    display: flex;                /* Use flexbox for layout */
-    justify-content: space-around; /* Space items evenly */
+    display: flex;                
+    justify-content: space-around; 
     margin-top: 20px;
 }
 
 .prod-form, .coupon-form {
     background-color: rgb(49, 33, 192);
-    border: 1px solid #f60606;      /* Light border */
-    border-radius: 5px;          /* Rounded corners */
-    padding: 20px;               /* Padding inside the boxes */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Slight shadow */
-    flex: 1;                     /* Make both boxes grow equally */
-    margin: 0 10px;              /* Margin on the sides */
+    border: 1px solid #f60606;      
+    border-radius: 5px;          
+    padding: 20px;               
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    flex: 1;                     
+    margin: 0 10px;              
 }
 
 h1 {
-    text-align: center;          /* Center header */
+    text-align: center;          
 }
 
 h3 {
-    margin-bottom: 15px;         /* Space between heading and form elements */
+    margin-bottom: 15px;         
 }
 
 .error {
@@ -34,13 +34,13 @@ h3 {
     margin-top: 5px;
 }
 
-/* Add responsive styles */
+
 @media (max-width: 768px) {
     .parent {
-        flex-direction: column;   /* Stack elements vertically on smaller screens */
+        flex-direction: column;
     }
 
     .prod-form, .coupon-form {
-        margin: 10px 0;           /* Add vertical margin */
+        margin: 10px 0; 
     }
 }

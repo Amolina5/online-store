@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
-import './styles/Contact.css'; // Ensure this CSS file only contains styles for ContactPage
+import './styles/Contact.css'; 
 
 function Contact() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const [errors, setErrors] = useState({});
 
-  // Handle input changes and update formData state
+  
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prevFormData => ({ ...prevFormData, [name]: value }));
   };
 
-  // Validate form inputs
+  
   const validateForm = () => {
     let newErrors = {};
     if (!formData.name) newErrors.name = "Name is required";
@@ -21,7 +21,7 @@ function Contact() {
     return Object.keys(newErrors).length === 0;
   };
 
-  // Handle form submission
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validateForm()) {
