@@ -1,19 +1,4 @@
-import React, { use, useState } from 'react';
-import './styles/CatalogPage.css';
-import Product from './Product';
-import { useEffect, useState } from 'react';
-import dataSerivce from '../services/dataSerivce';
-
 const arcadeMachines = [
-
-    function loadData(){
-        const prods = dataSerivce.getProducts();
-        setAllProducts(prods);
-    },
-    //useEffect(function() {
-        //useLoaderData()
-    //}, []);
-
     {
         id: 1,
         name: 'Classic Arcade Machine',
@@ -89,4 +74,21 @@ const CatalogPage = () => {
     );
 };
 
-export default CatalogPage;
+class DataService {
+            // todo call the sever t ge the products
+    getProducts() {
+        return arcadeMachines;
+
+    }
+    
+    getCategories(){
+        return machine;
+    }
+    saveProduct(){
+        
+
+    }
+    
+}
+
+export default new DataService;
