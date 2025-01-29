@@ -4,7 +4,12 @@ import Product from './Product';
 import { useEffect, useState } from 'react';
 import dataSerivce from '../services/dataSerivce';
 
+const [selectedCategory, setSelectedCategory] = useState('all'); 
+const [allProducts, setAllProducts] = useState([]);
+const [cataegories, setCategories] = useState([]);
+
 const arcadeMachines = [
+
 
     function loadData(){
         const prods = dataSerivce.getProducts();
@@ -69,6 +74,17 @@ const arcadeMachines = [
     },
     
 ];
+function handleCategory() {
+    console.log('handleCategory',cat);
+    setSelectedCategory(cat);
+}
+ useEffect(function() {
+        useLoaderData()
+    }, []);
+
+function clearFilter() {
+    setSelectedCategory('');
+}
 
 const machine =["Pacman", "moratal kombat", "retro racing", "dance dance","mario", "UFC Machine","Ski-Ball"];
 
@@ -79,9 +95,13 @@ const CatalogPage = () => {
         <div className="catalog-filter">
             <h1>Arcade Machines for Purchase</h1>
 
-            { machine.map(cat => <button className='btn btn-sm btn-primary'>{cat}</button>)}
+            <div className='filter'>
+                <button onClick={clearFilter} className='btn btn-sm-primary'>All</button>
+            </div>
+
+            { machine.map(cat => <button onClick={ ()=>{handleCategory(cat) }} className='btn btn-sm btn-primary'>{cat}</button>)}
             <div className="machine-list">
-                {arcadeMachines.map(machine => (
+                {arcadeMachines.filter(prod =>  prod.category == selectedCategory || !selectedCategory).map(machine => (
                     <Product data={machine} />
                 ))}
             </div>
